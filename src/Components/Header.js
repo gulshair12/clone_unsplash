@@ -1,6 +1,7 @@
 import React from "react";
 import unsplashIcon from "../Assets/Unsplash.png";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -9,14 +10,16 @@ export default function Header() {
       <nav className="flex-no-wrap relative flex w-full items-center justify-between py-2 lg:flex-wrap lg:justify-start lg:py-4">
         <div className="flex w-full flex-wrap items-center justify-between px-3">
           {/* Logo */}
-          <div className="mb-4 ml-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0">
-            <img
-              src={unsplashIcon}
-              className="h-[3rem]"
-              alt="unsplash Logo"
-              loading="lazy"
-            />
-          </div>
+          <Link to="/">
+            <div className="mb-4 ml-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0">
+              <img
+                src={unsplashIcon}
+                className="h-[3rem]"
+                alt="unsplash Logo"
+                loading="lazy"
+              />
+            </div>
+          </Link>
           {/* Search Bar */}
           <div className="mr-2">
             <form>
@@ -68,8 +71,12 @@ export default function Header() {
               <Button buttonVariant="colored_button">Unsplash+</Button>
             </li>
 
-            <li className="mb-4 lg:mb-0 lg:pl-16 lg:pr-2 border-l border-gray-400">
-              <Button buttonVariant="header_buttons">Login</Button>
+            <li className="mb-4 lg:mb-0 lg:pl-12  border-l border-gray-400">
+              <Link to="/collection">
+                <Button buttonVariant="header_buttons">
+                  Collection Images
+                </Button>
+              </Link>
             </li>
           </ul>
         </div>

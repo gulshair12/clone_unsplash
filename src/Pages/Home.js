@@ -1,20 +1,16 @@
 import React from "react";
 import Header from "../Components/Header";
-import Banner1 from "../Assets/banner1.jpg";
+import HeroImage from "../Components/HeroImage";
+import ImageGrid from "../Components/ImageGrid";
+
 
 export default function Home() {
   return (
     <>
       <div>
         <Header />
-        <div
-          style={{
-            backgroundImage: `url(${Banner1})`,
-            height: "500px",
-            width: "120rem",
-            backgroundRepeat: "no-repeat",
-          }}
-        ></div>
+        <HeroImage />
+        <ImageGrid />
       </div>
     </>
   );
