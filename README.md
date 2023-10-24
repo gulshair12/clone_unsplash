@@ -7,10 +7,10 @@ API Data Fetching: The landing page of this project utilizes the useEffect hook 
 \
  Image Upload: Unsplash Clone offers the option for users to upload their own images. This feature allows users to contribute to the platform, adding a layer of interactivity to the project.\
  \
- Image Deletion: Users can delete images they've uploaded. The implementation of this feature showcases how to manage user-generated content within the application./
- /
-Tailwind CSS Styling: The project is styled with Tailwind CSS, making it visually appealing and responsive to different screen sizes./
-/
+ Image Deletion: Users can delete images they've uploaded. The implementation of this feature showcases how to manage user-generated content within the application.\
+ \
+Tailwind CSS Styling: The project is styled with Tailwind CSS, making it visually appealing and responsive to different screen sizes.\
+\
  Modern Web Development Techniques: By working on this project, you will learn modern web development techniques, including how to create dynamic interfaces, interact with APIs, and manage user-generated content.
 
 # Learning Journey
