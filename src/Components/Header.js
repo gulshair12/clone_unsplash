@@ -1,5 +1,5 @@
 import React from "react";
-import unsplashIcon from "../Assets/Unsplash.png";
+import logoImage from "../Assets/Design.png"
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ export default function Header() {
           <Link to="/">
             <div className="mb-4 ml-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0">
               <img
-                src={unsplashIcon}
+                src={logoImage}
                 className="h-[3rem]"
                 alt="unsplash Logo"
                 loading="lazy"

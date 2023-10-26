@@ -10,14 +10,18 @@ export default function ImageUploader({ addNewImage }) {
 
   const handleUpload = () => {
     if (selectedFile) {
-      const newImage = { id: Date.now(), url: URL.createObjectURL(selectedFile) };
-      addNewImage(newImage);
-      setSelectedFile(null);
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const newImage = { id: Date.now(), url: event.target.result };
+        addNewImage(newImage);
+        setSelectedFile(null);
+      };
+      reader.readAsDataURL(selectedFile);
     }
   };
 
   return (
-    <span className="image-uploader flex justify-center ">
+    <span className="image-uploader flex justify-center mb-8">
       <input type="file" accept="image/*" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload</button>
     </span>

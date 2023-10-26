@@ -12,9 +12,9 @@ export default function HeroImage() {
       >
         <div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white text-center">
           
-          <h1 className="text-4xl font-bold mb-4">Unsplash</h1>
-          <p className="text-lg mb-2">The internet’s source for visuals.</p>
-          <p className="text-lg mb-8">Powered by creators everywhere.</p>
+          <h1 className="text-4xl font-bold mb-4">Cute Cats</h1>
+          <p className="text-lg mb-2">See Beautiful Cats Everyday</p>
+          <p className="text-lg mb-8">Powered by cute cats.</p>
 
           
           <form>
@@ -53,7 +53,7 @@ export default function HeroImage() {
           </form>
 
           <p className="text-sm mt-4">
-            Trending: flower wallpapers, backgrounds, happy, love
+            Trending: fluffy, dark, brown, black
           </p>
         </div>
       </div>
